@@ -1,0 +1,34 @@
+page_header = """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <style type= "text/css">
+        .error{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Signup
+    </h1>
+</html>
+"""
+
+form = """
+<form>
+<form method="post">
+<h1>Signup</h1>
+    <label>Username<input type="text" name= "username" value="username"></label>
+    <br>
+    <label>Password<input type="text" name= "password" value=""></label>
+    <br>
+    <label>Verify Password<input type="text" name= "verify_password" value=""></label>
+    <br>
+    <label>Email (Optional)<input type="text" name= "email" value="email"></label>
+    <div style="color: red">%(error)s</div>
+    <br>
+    <input type= "Submit">
+</form>
+"""
